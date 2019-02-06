@@ -1,0 +1,38 @@
+.tag-list {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.tags-title {
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  p {
+    margin: 5px 4px 2px 0px;
+  }
+}
+
+.margin-right {
+  margin-right: 10px
+}
+
+.tag-group {
+  flex: 50% 0 0;
+  cursor: pointer;
+}
+
+.subtags-list {
+  display: none;
+}
+
+.open {
+  display: block;
+}
+
+.subtag {
+  margin: 0 0 3px;
+}
+
+
