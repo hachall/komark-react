@@ -1,26 +1,43 @@
 import React, { Component } from 'react';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import { setTags } from '../actions';
 
-import TagGroup from '../components/tag_group'
+import TagGroup from './tag_group'
 
 class TagList extends Component {
 
-  static defaultProps = {
-    tag_groups: [
-      {"name": "Hip-Hop",
-      "subtags": ['Trap', 'Gangsta', 'Boom Bap', 'Dirty South']},
-      {"name": "UK",
-      "subtags": ['Grime', 'Garage', 'Drum & Bass', 'Dubstep']}
-    ]
+
+  componentWillMount() {
+    this.props.setTags();
   }
 
   render() {
     return (
       <div className="tag-list">
-        {this.props.tag_groups.map((tag_group) => <TagGroup tag_group={tag_group} key={tag_group.name}/>)}
+        <div className="tag-column">
+          {this.props.tags[0].map((tag_group) => <TagGroup tag_group={tag_group} key={tag_group.name}/>)}
+        </div>
+        <div className="tag-column">
+          {this.props.tags[1].map((tag_group) => <TagGroup tag_group={tag_group} key={tag_group.name}/>)}
+        </div>
       </div>
     );
   }
 }
 
-export default TagList;
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators(
+    {setTags: setTags},
+    dispatch
+  );
+}
+
+function mapStateToProps(state) {
+  return {
+    tags: state.tags
+  };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(TagList);
 
