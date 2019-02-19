@@ -1,0 +1,148 @@
+.mix {
+  height: 280px;
+  // padding: 20px;
+  margin-bottom: 25px;
+  border: 3px solid black;
+  box-shadow: 2px 3px 30px rgba(0,0,0,0.1);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-size: cover;
+}
+
+.play-section {
+  flex: 50% 0 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  font-size: 90px;
+  color: white;
+  opacity: 0;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+  // background-position: center;
+}
+
+.info-section {
+  flex-grow: 1;
+  // background-color: green;
+  margin: 2px 8px;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px;
+  // opacity: 0.9;
+  &:hover {
+    opacity: 1;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+  .details {
+    max-width: 35%;
+  }
+}
+.description2 {
+  font-size: 12px;
+  width: 63%;
+  text-align: justify;
+  margin-right: 5px;
+}
+
+
+
+
+.tags-section {
+  margin: 0px 8px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mix-tag {
+  background-color: white;
+  color: black;
+  white-space: nowrap;
+  font-weight: bold;
+  padding: 3px;
+  margin: 3px;
+  &:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+.artist {
+
+  font-size: 10px;
+}
+.mixname {
+  font-weight: bold;
+  font-size: 16px;
+
+}
+.date {
+  font-size: 9px;
+}
+.no-m-btm {
+  margin-bottom: 0px;
+}
+
+
+
+
+
+
+
+// .description-box {
+//   margin-right: 25px;
+//   height: 100%;
+//   &:hover {
+//     color: black;
+//   }
+// }
+
+// .description {
+//   flex-grow: 1;
+//   color: white;
+//   font-size: 13px;
+//   padding: 0px 25px;
+//   margin-right: 10px;
+// }
+
+// @mixin multiLineEllipsis($lineHeight: 1.2em, $lineCount: 1, $bgColor: white){
+//   overflow: hidden;
+//   position: relative;
+//   line-height: $lineHeight;
+//   max-height: $lineHeight * $lineCount;
+//   text-align: justify;
+//   margin-right: -1em;
+//   padding-right: 1em;
+//   &:before {
+//     content: '...';
+//     position: absolute;
+//     right: 0;
+//     bottom: 0;
+//   }
+//   &:after {
+//     content: '';
+//     position: absolute;
+//     right: 0;
+//     width: 1em;
+//     height: 1em;
+//     margin-top: 0.2em;
+//     background: $bgColor;
+//   }
+// }
+
+// .description {
+//   @include multiLineEllipsis($lineHeight: 1.2em, $lineCount: 3, $bgColor: white);
+// }

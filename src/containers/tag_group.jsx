@@ -60,15 +60,7 @@ class TagGroup extends Component {
       }
     }
 
-    // if ((this.checkSelectionInGroup()) && (this.state.open)) {
-    //   let disableOpen = true
-    //   console.log(disableOpen)
-    // } else {
-    //   let disableOpen = false
-    // }
-
     let disableOpen = ((this.checkSelectionInGroup()) && (this.state.open))
-
 
     return (
       <div className="tag-group">

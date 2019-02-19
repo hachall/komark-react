@@ -3,6 +3,7 @@ body {
 }
 
 @import 'tags';
+@import 'mix';
 
 #root {
   height: 100vh;
@@ -45,10 +46,12 @@ body {
   box-shadow: 2px 3px 30px rgba(0,0,0,0.1);
   border-radius: 3px;
   overflow: scroll;
+  position: sticky !important;
 
 }
 
 .right-side {
   flex-grow: 1;
   height: 100%;
+  padding: 30px 0px;
 }
