@@ -29,14 +29,9 @@ class Mix extends Component {
                 maxLine='2'
                 ellipsis='...'
                 trimRight
-                basedOn='letters'
+                basedOn='words'
               />
             </div>
-            {/*<div className="description-box">
-              <div className="description">
-                <p>{this.props.mix.description}</p>
-              </div>
-            </div>*/}
           </div>
           <div className="tags-section">
             {this.props.mix.tags.map((tag) => <div className="mix-tag" key={tag}>{tag}</div>)}
