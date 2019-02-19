@@ -7,7 +7,7 @@ const tags = [
     {"name": "Hip-Hop",
     "subtags": ['Trap', 'Gangsta', 'Boom Bap', 'Dirty South']},
     {"name": "Jazz",
-    "subtags": ['Contemporary', 'Free', 'Jazz-Funk', 'Jazz Fusion', 'Soul Jazz', 'Spiritual Jazz']},
+    "subtags": ['Contemporary', 'Free Jazz', 'Jazz-Funk', 'Jazz Fusion', 'Soul Jazz', 'Spiritual Jazz']},
     {"name": "Rock",
     "subtags": ['Grunge', 'Indie', 'Rock', 'Krautrock', 'Psychedelic Rock']}
   ],

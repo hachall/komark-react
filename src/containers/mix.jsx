@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import LinesEllipsis from 'react-lines-ellipsis';
 
 class Mix extends Component {
@@ -34,11 +35,25 @@ class Mix extends Component {
             </div>
           </div>
           <div className="tags-section">
-            {this.props.mix.tags.map((tag) => <div className="mix-tag" key={tag}>{tag}</div>)}
+            {this.props.mix.tags.map((tag) => {
+                let classes = "mix-tag"
+                if (this.props.selectedTags.includes(tag)) {
+                  classes += " mix-tag-selected"
+                }
+              return (
+                <div className={classes} key={tag}>{tag}</div>
+              )
+            })}
           </div>
         </div>
       </div>
   )}
 }
 
-export default Mix;
+function mapStateToProps(state) {
+  return {
+    selectedTags: state.selectedTags
+  };
+}
+
+export default connect(mapStateToProps, null)(Mix);

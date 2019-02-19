@@ -1,4 +1,5 @@
 import tags from '../tags';
+import mixes from '../mixes';
 
 export function setTags() {
 
@@ -14,4 +15,31 @@ export function selectTag(tag) {
     payload: tag
   }
 
+}
+
+
+export function setMixes() {
+  return {
+    type: 'SET_MIXES',
+    payload: mixes
+  }
+}
+
+
+export function filterMixes(allMixes, selectedTags) {
+  console.log(allMixes)
+  console.log(selectedTags)
+  let outputMixes = []
+  if (selectedTags.length == 0) {
+    outputMixes = allMixes
+  } else {
+    outputMixes = mixes.filter((mix) => {
+      return mix.tags.filter(x => selectedTags.includes(x)).length > 0
+    })
+  }
+
+  return {
+    type: 'FILTER_MIXES',
+    payload: outputMixes
+  }
 }

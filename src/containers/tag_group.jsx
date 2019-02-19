@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { selectTag } from '../actions';
+import { filterMixes } from '../actions';
 
 
 class TagGroup extends Component {
@@ -35,6 +36,9 @@ class TagGroup extends Component {
     return !(intersection.length === 0)
   }
 
+  componentDidUpdate(prevProps, prevState) {
+    this.props.filterMixes(this.props.allMixes, this.props.selectedTags)
+  }
 
   render() {
 
@@ -84,14 +88,15 @@ class TagGroup extends Component {
 
 function mapDispatchToProps(dispatch) {
   return bindActionCreators(
-    {selectTag: selectTag},
+    {selectTag: selectTag, filterMixes: filterMixes},
     dispatch
   );
 }
 
 function mapStateToProps(state) {
   return {
-    selectedTags: state.selectedTags
+    selectedTags: state.selectedTags,
+    allMixes: state.allMixes
   };
 }
 

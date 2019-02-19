@@ -10,9 +10,13 @@ import AppIndex from './components/appindex';
 
 import tagsReducer from './reducers/tags_reducer';
 import selectedTagsReducer from './reducers/selected_tags_reducer';
+import mixesReducer from './reducers/mixes_reducer';
+import allMixesReducer from './reducers/all_mixes_reducer';
 const reducers = combineReducers({
   tags: tagsReducer,
-  selectedTags: selectedTagsReducer
+  selectedTags: selectedTagsReducer,
+  allMixes: allMixesReducer,
+  mixes: mixesReducer
 });
 
 const initialState = {

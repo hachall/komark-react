@@ -1,10 +1,17 @@
 import React, { Component } from 'react';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import { setMixes } from '../actions';
 
 import SearchBar from '../containers/search_bar'
 import TagList from '../containers/tag_list'
 import MixList from '../containers/mix_list'
 
 class AppIndex extends Component {
+
+  componentWillMount() {
+    this.props.setMixes();
+  }
 
   render() {
     return (
@@ -23,4 +30,11 @@ class AppIndex extends Component {
   }
 }
 
-export default AppIndex;
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators(
+    {setMixes: setMixes},
+    dispatch
+  );
+}
+
+export default connect(null, mapDispatchToProps)(AppIndex);
