@@ -38,6 +38,10 @@ export function filterMixes(allMixes, selectedTags) {
     })
   }
 
+  outputMixes.sort(function(a,b) {
+  return ((b.tags.filter(x => selectedTags.includes(x)).length) - (a.tags.filter(x => selectedTags.includes(x)).length))
+  })
+
   return {
     type: 'FILTER_MIXES',
     payload: outputMixes

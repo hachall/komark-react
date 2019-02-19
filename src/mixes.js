@@ -5,7 +5,7 @@ const mixes = [
     "date": "11/11",
     "image_url": "https://djbooth.net/.image/t_share/MTUzNDg1OTkyMjgzNDgxMjg2/image-placeholder-title.jpg",
     "description": "Losing your brother and being dropped by your record label in the same week can do things to your psyche. Dumile fell off the grid for several years to collect himself and re-emerged at the Nuyorican Poets Cafe in New York, adorned in a metal mask. He was scorned by the industry the same way Doctor Doom thought the world had shunned him when he fucked up that science experiment in college. Operation: Doomsday was his rebirth.",
-    "tags": ["Hip-Hop", "Rap", 'Psychedelic Rock', 'Detroit House', 'Afrobeat']
+    "tags": ["Hip-Hop", 'Psychedelic Rock', 'Detroit House', 'Afrobeat']
     },
     {
     "name": "MM..FOOD?",
