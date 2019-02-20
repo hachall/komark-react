@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 import LinesEllipsis from 'react-lines-ellipsis';
+import { selectTag } from '../actions'
 
 class Mix extends Component {
+
+  handleClick = (event) => {
+    this.props.selectTag(event.currentTarget.innerText)
+  }
 
   render() {
     const img_style = {
@@ -41,7 +47,7 @@ class Mix extends Component {
                   classes += " mix-tag-selected"
                 }
               return (
-                <div className={classes} key={tag}>{tag}</div>
+                <div className={classes} onClick={this.handleClick}key={tag}>{tag}</div>
               )
             })}
           </div>
@@ -56,4 +62,11 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps, null)(Mix);
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators(
+    {selectTag: selectTag},
+    dispatch
+  );
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Mix);
