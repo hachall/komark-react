@@ -38,7 +38,12 @@ class TagGroup extends Component {
 
   componentDidUpdate(prevProps, prevState) {
     this.props.filterMixes(this.props.allMixes, this.props.selectedTags)
+
+    if ((this.checkSelectionInGroup()) && (!this.state.open)){
+      this.toggleOpen()
+    }
   }
+
 
   render() {
 
@@ -64,7 +69,9 @@ class TagGroup extends Component {
       }
     }
 
-    let disableOpen = ((this.checkSelectionInGroup()) && (this.state.open))
+    let disableClose = ((this.checkSelectionInGroup()) && (this.state.open))
+
+
 
     return (
       <div className="tag-group">
@@ -73,7 +80,7 @@ class TagGroup extends Component {
             <p className={classesTitleTag(this.props.tag_group.name)}>{this.props.tag_group.name}</p>
           </div>
           {
-            disableOpen
+            disableClose
             ? <p><i className={chevron_toggle_classes + " disabled"}></i></p>
             : <p onClick={this.toggleOpen}><i className={chevron_toggle_classes}></i></p>
           }
