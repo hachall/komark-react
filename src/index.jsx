@@ -7,6 +7,7 @@ import { logger } from 'redux-logger';
 import '../assets/stylesheets/application.scss';
 
 import AppIndex from './components/appindex';
+import MixPlayer from './containers/mix_player';
 
 import tagsReducer from './reducers/tags_reducer';
 import selectedTagsReducer from './reducers/selected_tags_reducer';
@@ -30,6 +31,7 @@ if (root) {
   ReactDOM.render(
     <Provider store={createStore(reducers, initialState, middlewares)}>
       <AppIndex />
+      <MixPlayer />
     </Provider>,
     root);
 }
