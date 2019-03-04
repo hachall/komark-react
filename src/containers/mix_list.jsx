@@ -17,7 +17,7 @@ class MixList extends Component {
   render() {
     return (
       <div>
-        <div className="row">
+        <div id="mix-row" className="row">
           {this.props.mixes.map((mix) => <Mix mix={mix} key={mix.name}/>)}
         </div>
       </div>
