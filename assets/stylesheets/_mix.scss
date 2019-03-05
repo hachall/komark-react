@@ -13,7 +13,7 @@
 }
 
 .play-section {
-  flex: 50% 0 0;
+  // flex: 50% 0 0;
 
   display: flex;
   align-items: center;
@@ -31,7 +31,8 @@
 }
 
 .info-section {
-  flex-grow: 1;
+  // flex-grow: 1;
+  min-height: 67px;
   // background-color: green;
   margin: 2px 8px;
   background-color: white;
@@ -92,6 +93,9 @@
 .mixname {
   font-weight: bold;
   font-size: 16px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
 
 }
 .date {

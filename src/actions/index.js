@@ -27,8 +27,6 @@ export function setMixes() {
 
 
 export function filterMixes(allMixes, selectedTags) {
-  console.log(allMixes)
-  console.log(selectedTags)
   let outputMixes = []
   if (selectedTags.length == 0) {
     outputMixes = allMixes

@@ -24,6 +24,7 @@ class Mix extends Component {
           <div className="play-section" >
             <i className="far fa-play-circle"></i>
           </div>
+          <div>
           <div className="info-section">
             <div className="details">
               <p className="artist no-m-btm">{this.props.mix.artist}</p>
@@ -50,6 +51,7 @@ class Mix extends Component {
                 <div className={classes} onClick={this.handleClick}key={tag}>{tag}</div>
               )
             })}
+          </div>
           </div>
         </div>
       </div>

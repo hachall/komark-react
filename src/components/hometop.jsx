@@ -13,7 +13,7 @@ class HomeTop extends Component {
     return (
       <div className="home-top">
         <NavBar />
-
+        <Carousel />
       </div>
     );
   }

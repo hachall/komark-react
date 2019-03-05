@@ -15,7 +15,7 @@ class HomeIndex extends Component {
 
   render() {
     return (
-      <div className="index-section">
+      <div id="index-anchor" className="index-section">
         <div className="left-side">
           <div className="search-section">
             <SearchBar />

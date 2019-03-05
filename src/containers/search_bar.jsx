@@ -20,11 +20,18 @@ class SearchBar extends Component {
 
   render() {
     return (
-      <input
-      value={this.state.term}
-      type="text"
-      className="form-search form-control"
-      onChange={this.handleChange}/>
+      <div className="mix-search">
+        <input
+        value={this.state.term}
+        type="text"
+        id="mix-search-input"
+        spellCheck="false"
+        className="form-search form-control"
+        onChange={this.handleChange}/>
+        <div className="search-icon">
+          <i className="fas fa-search"></i>
+        </div>
+      </div>
     );
   }
 }

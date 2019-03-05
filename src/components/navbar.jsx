@@ -5,15 +5,35 @@ class NavBar extends Component {
   render() {
     return (
       <div className="navbar-kom">
-        <a href="/" className="navbar-brand">
-          {/*<img src="images/logo.png" alt="logo"/>*/}
-          <p className="navbar-brand-text">Kommunity Archive</p>
-        </a>
+
+      <div className="navbar-item navbar-link">
+        <div className="navbar-boxes">
+          <p id="navbar-brand" className="navbar-brand-text">Kommunity Archive</p>
+        </div>
+      </div>
+
 
       <div className="navbar-right hidden-xs hidden-sm">
-        <a href="" className="navbar-item navbar-link">Explore</a>
-        <a href="" className="navbar-item navbar-link">Shop</a>
-        <a href="" className="navbar-item navbar-link">About</a>
+          <a href="#index-anchor" className="navbar-item navbar-link">
+            <div className="navbar-boxes">
+              Explore
+            </div>
+          </a>
+          <a href="" className="navbar-item navbar-link">
+            <div className="navbar-boxes">
+              Events
+            </div>
+          </a>
+          <a href="" className="navbar-item navbar-link">
+            <div className="navbar-boxes">
+              Shop
+            </div>
+          </a>
+          <a href="" className="navbar-item navbar-link">
+            <div className="navbar-boxes">
+              About
+            </div>
+          </a>
       </div>
 
       <div className="navbar-item hidden-md hidden-lg">
