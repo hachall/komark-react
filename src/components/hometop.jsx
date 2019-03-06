@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import NavBar from './navbar'
-import Carousel from '../containers/carousel'
+import HomeCarousel from '../containers/home_carousel'
 
 
 
@@ -13,7 +13,7 @@ class HomeTop extends Component {
     return (
       <div className="home-top">
         <NavBar />
-        <Carousel />
+        <HomeCarousel />
       </div>
     );
   }

@@ -28,10 +28,12 @@
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "jquery": "^3.3.1",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-lines-ellipsis": "^0.14.0",
     "react-redux": "^6.0.0",
+    "reactstrap": "^7.1.0",
     "redux": "^4.0.1",
     "redux-logger": "^3.0.6"
   },
