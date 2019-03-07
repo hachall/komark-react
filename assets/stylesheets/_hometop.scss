@@ -2,9 +2,93 @@
   height: 100vh;
   width: 100vw;
   position: relative;
+  overflow: hidden;
 }
-.home-carousel {
-  height: 100%;
+.home-carousel-image {
+  // height: 100%;
   width: 100%;
   background-size: cover;
+  overflow: none;
 }
+.carousel {
+  text-align: center;
+}
+.indicators-holder {
+  position: absolute;
+  bottom: 0;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.carousel-indicators {
+  // position: static;
+  top: calc(0.9 * 100vh);
+  margin: 0 auto;
+}
+ol.carousel-indicators {
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 5%;
+}
+
+ol.carousel-indicators li,
+ol.carousel-indicators li.active {
+  float: left;
+  width: 33%;
+  height: 3px;
+  margin: 0 2px;
+  border-radius: 0;
+  border: 0;
+  background: rgba(255,255,255,0.5);
+}
+
+ol.carousel-indicators li.active {
+  background: rgba(255,255,255,1);
+}
+.carousel-control-prev {
+  align-items: normal;
+  top: 0;
+  padding-top: calc(100vh/2);
+}
+.carousel-control-next {
+  align-items: normal;
+  top: 0;
+  padding-top: calc(100vh/2);
+}
+.carousel-item-info {
+  // height: 200px;
+  // width: 200px;
+  // background-color: red;
+  position: absolute;
+  top: calc(100vh *0.6);
+
+  z-index: 30;
+}
+.carousel-info-centre {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.carousel-info-left {
+    left: 150px;
+    text-align: left;
+}
+.carousel-info-right {
+    right: 150px;
+    text-align: right;
+}
+.carousel-text {
+  background-color: white;
+  color: black;
+  padding: 8px 4px;
+}
+
+
+
+
