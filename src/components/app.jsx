@@ -14,7 +14,7 @@ class App extends Component {
       <div className="app">
         <HomeTop />
         <HomeIndex />
-        <MixPlayer />
+        {/*<MixPlayer />*/}
       </div>
     );
   }

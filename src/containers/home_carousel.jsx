@@ -10,11 +10,32 @@ import {
 const items = [
   {
     src: 'assets/images/lifex.jpeg',
-    title: 'Slide 1',
-    caption: 'Slide 1',
-    link: 'link',
+    title: 'Life Experience w/ John Loveless',
+    caption: `If you came to the first one, you know the deal. If you didn’t, we believe in second chances.
+      This time it's John Loveless in the driving seat. He'll melt your brain Hacienda style.
+      The residents will do their thing, come do yours.`,
+    link: 'See Tickets',
     link_url: '/',
-    pos: "centre"
+    pos: "left"
+  },
+  {
+    src: 'assets/images/lifex2.png',
+    title: 'Life Experience w/ Proteus',
+    caption: `Life Experience is throwing its debut party.
+      Proteus and residents are supplying 6 hours of dark and driving music.
+      There's a cage inside. There's a garden outside.
+      We can't promise anything, but you may just gain some life experience.`,
+    link: 'See Tickets',
+    link_url: '/',
+    pos: "right"
+  },
+  {
+    src: 'assets/images/djpremier.jpg',
+    title: 'MASTA ACE – EAT (FEAT. EVIDENCE) (PROD. BY DJ PREMIER)',
+    caption: `Finally DJ Premier x Masta Ace collabo!! Rumours say it’s a beat from 2011 created for Nick Javas. It will be released on the Digital Deluxe Edition of the album “A Breukelen Story” together with another Marco Polo produced song, and those bonus songs also being released as a 45 vinyl!!`,
+    link: 'Listen Here',
+    link_url: '/',
+    pos: "right"
   }
 ];
 
@@ -70,13 +91,12 @@ class HomeCarousel extends Component {
         >
           <img className="home-carousel-image" src={item.src} alt={item.altText} />
           <div className={posClass}>
-            <div className="">
-              <h3 className="carousel-text">{item.title}</h3>
-            </div>
-            <div className="">
+            <div className="home-carousel-info">
+              <h2 className="carousel-text">{item.title}</h2>
               <p className="carousel-text">{item.caption}</p>
+              {item.link ? <a href={item.link_url} className="carousel-text carousel-info-button">{item.link}</a> : ""}
             </div>
-            {item.link ? <a href={item.link_url} className="carousel-text">{item.link}</a> : ""}
+
           </div>
         </CarouselItem>
       );

@@ -5,7 +5,7 @@
   overflow: hidden;
 }
 .home-carousel-image {
-  // height: 100%;
+  height: 100%;
   width: 100%;
   background-size: cover;
   overflow: none;
@@ -73,20 +73,47 @@ ol.carousel-indicators li.active {
     margin-right: auto;
     left: 0;
     right: 0;
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
 }
 .carousel-info-left {
-    left: 150px;
+    left: 10%;
     text-align: left;
 }
 .carousel-info-right {
-    right: 150px;
+    right: 10%;
     text-align: right;
 }
 .carousel-text {
   background-color: white;
   color: black;
   padding: 8px 4px;
+}
+.home-carousel-info {
+  width: 270px;
+
+  p {
+    font-size: 11px;
+  }
+
+  h2 {
+    font-weight: bold;
+  }
+
+}
+
+.carousel-info-button {
+  font-weight: bold;
+  font-size: 12px;
+  a {
+    text-decoration: none;
+  }
+
+  &:hover {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+  }
 }
 
 
