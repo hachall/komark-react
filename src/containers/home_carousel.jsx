@@ -12,9 +12,9 @@ const items = [
     src: 'assets/images/lifex.jpeg',
     title: 'Slide 1',
     caption: 'Slide 1',
-    link: null,
+    link: 'link',
     link_url: '/',
-    pos: "left"
+    pos: "centre"
   }
 ];
 
