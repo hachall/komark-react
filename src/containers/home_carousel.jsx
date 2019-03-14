@@ -87,7 +87,7 @@ class HomeCarousel extends Component {
           onExiting={this.onExiting}
           onExited={this.onExited}
           key={item.caption}
-          slide= {false}
+          ride="carousel"
         >
           <img className="home-carousel-image" src={item.src} alt={item.altText} />
           <div className={posClass}>
