@@ -30,7 +30,7 @@ class HomeIndex extends Component {
             <MixList />
           </div>
         </div>
-        <Footer />
+        {/*<Footer />*/}
       </div>
     );
   }

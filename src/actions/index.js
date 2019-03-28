@@ -10,6 +10,7 @@ export function setTags() {
 }
 
 export function selectTag(tag) {
+
   return {
     type: 'SELECT_TAG',
     payload: tag

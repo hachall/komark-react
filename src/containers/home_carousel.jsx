@@ -9,6 +9,14 @@ import {
 
 const items = [
   {
+    src: 'assets/images/LogoFinal.jpg',
+    title: "New Website Live!",
+    caption: `All new mixes week in week out`,
+    link: null,
+    link_url: '/',
+    pos: 'left'
+  },
+  {
     src: 'assets/images/lifex.jpeg',
     title: 'Life Experience w/ John Loveless',
     caption: `If you came to the first one, you know the deal. If you didn’t, we believe in second chances.

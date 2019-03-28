@@ -16,7 +16,6 @@ class TagGroup extends Component {
   }
 
   toggleOpen = (event) => {
-    console.log(event)
     this.setState({
       open: !this.state.open
     })
@@ -38,6 +37,7 @@ class TagGroup extends Component {
 
   componentDidUpdate(prevProps, prevState) {
     this.props.filterMixes(this.props.allMixes, this.props.selectedTags)
+
 
     if ((this.checkSelectionInGroup()) && (!this.state.open)){
       this.toggleOpen()

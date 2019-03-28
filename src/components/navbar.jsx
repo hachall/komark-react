@@ -3,13 +3,20 @@ import React, { Component } from 'react';
 class NavBar extends Component {
 
   render() {
+    const style = {
+      backgroundImage: `url('assets/images/LogoFinal.jpg')`
+    }
+
     return (
       <div className="navbar-kom">
 
       <div className="navbar-item navbar-link">
-        <div className="navbar-boxes">
-          <p id="navbar-brand" className="navbar-brand-text">Kommunity Archive</p>
+        <div className="nav-logo" >
+          <img src="assets/images/LogoFinal.jpg" alt=""/>
         </div>
+        {/*<div className="navbar-boxes">
+          <p id="navbar-brand" className="navbar-brand-text">Kommunity Archive</p>
+        </div>*/}
       </div>
 
 

@@ -34,7 +34,7 @@
   top: 0;
 }
 .right-side {
-  // height: 100vh;
+  // min-height: 100vh;
   // overflow: scroll;
 }
 
@@ -63,4 +63,7 @@
   flex-grow: 1;
   // height: 100%;
   padding: 30px 0px;
+}
+.index-section {
+  min-height: 100vh;
 }

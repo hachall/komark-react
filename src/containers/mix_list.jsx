@@ -9,9 +9,7 @@ import Mix from './mix'
 class MixList extends Component {
 
   componentDidUpdate(prevProps, prevState) {
-    $([document.documentElement, document.body]).animate({
-        scrollTop: $("#index-anchor").offset().top
-    }, 100);
+
   }
 
 

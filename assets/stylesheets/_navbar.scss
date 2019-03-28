@@ -18,6 +18,18 @@
 .navbar-brand img {
   height: 50px;
 }
+.nav-logo {
+  height: 31px;
+  width: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+  img {
+    height: 110px;
+  }
+}
+
 #navbar-brand {
   font-weight: 18px;
 }
