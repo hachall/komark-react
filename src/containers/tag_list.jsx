@@ -10,6 +10,8 @@ class TagList extends Component {
 
   componentWillMount() {
     this.props.setTags();
+    // jQuery(".left-side").wrap("<div class='left-placeholder'></div>");
+    // jQuery(".left-placeholder").width(jQuery(".left-side").outerWidth());
   }
 
   render() {

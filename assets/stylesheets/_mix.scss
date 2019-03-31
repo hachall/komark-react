@@ -106,7 +106,12 @@
   margin-bottom: 0px;
 }
 
-
+.mix-link {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
 
 
 

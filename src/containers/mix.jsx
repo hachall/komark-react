@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import LinesEllipsis from 'react-lines-ellipsis';
-import { selectTag } from '../actions'
+import { selectTag } from '../actions';
+import { Link } from 'react-router-dom';
 
 class Mix extends Component {
 
@@ -21,26 +22,31 @@ class Mix extends Component {
     return (
       <div className="col-sm-12 col-md-6 col-lg-4">
         <div className="mix" style={img_style}>
+
           <div className="play-section" >
             <i className="far fa-play-circle"></i>
           </div>
           <div>
-          <div className="info-section">
-            <div className="details">
-              <p className="artist no-m-btm">{this.props.mix.artist}</p>
-              <p className="mixname no-m-btm">{this.props.mix.name}</p>
-              <p className="date no-m-btm">{dateString}</p>
+
+          <Link className="mix-link" to={`mixes/${this.props.mix.id}`} key={this.props.mix.id}>
+            <div className="info-section">
+              <div className="details">
+                <p className="artist no-m-btm">{this.props.mix.artist}</p>
+                <p className="mixname no-m-btm">{this.props.mix.name}</p>
+                <p className="date no-m-btm">{dateString}</p>
+              </div>
+              <div className="description2">
+                <LinesEllipsis
+                  text={this.props.mix.description}
+                  maxLine='2'
+                  ellipsis='...'
+                  trimRight
+                  basedOn='words'
+                />
+              </div>
             </div>
-            <div className="description2">
-              <LinesEllipsis
-                text={this.props.mix.description}
-                maxLine='2'
-                ellipsis='...'
-                trimRight
-                basedOn='words'
-              />
-            </div>
-          </div>
+          </Link>
+
           <div className="tags-section">
             {this.props.mix.tags.map((tag) => {
                 let classes = "mix-tag"

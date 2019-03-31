@@ -1,5 +1,6 @@
 const mixes = [
     {
+    "id": 1,
     "name": "Operation Doomsday",
     "artist": "MF DOOM",
     "date": "11/11",
@@ -8,6 +9,7 @@ const mixes = [
     "tags": ["Hip-Hop", 'Psychedelic Rock', 'Detroit House', 'Afrobeat']
     },
     {
+    "id": 2,
     "name": "MM..FOOD?",
     "artist": "MF DOOM",
     "date": "15/2",
@@ -16,6 +18,7 @@ const mixes = [
     "tags": ["Hip-Hop"]
     },
     {
+    "id": 3,
     "name": "Madvillainy",
     "artist": "Madlib & MF DOOM",
     "date": "1/9",
@@ -24,6 +27,7 @@ const mixes = [
     "tags": ["Hip-Hop", 'Trap']
     },
     {
+    "id": 4,
     "name": "Vaudeville Villain",
     "artist": "Viktor Vaughn",
     "date": "11/11",
@@ -32,6 +36,7 @@ const mixes = [
     "tags": ['Free Jazz', 'Jazz-Funk', 'Jazz Fusion']
     },
     {
+    "id": 5,
     "name": "Take Me to Your Leader",
     "artist": "King Geedorah",
     "date": "11/11",
@@ -40,6 +45,7 @@ const mixes = [
     "tags": ["Hip-Hop"]
     },
     {
+    "id": 6,
     "name": "Operation Doomsday2",
     "artist": "MF DOOM",
     "date": "11/11",
@@ -48,6 +54,7 @@ const mixes = [
     "tags": ['Grunge', 'Indie', 'Rock', 'Krautrock', 'Psychedelic Rock']
     },
     {
+    "id": 7,
     "name": "MM..FOOD?2",
     "artist": "MF DOOM",
     "date": "15/2",
@@ -56,6 +63,7 @@ const mixes = [
     "tags": ["Hip-Hop", 'Trap']
     },
     {
+    "id": 8,
     "name": "Madvillainy2",
     "artist": "Madlib & MF DOOM",
     "date": "1/9",
@@ -64,6 +72,7 @@ const mixes = [
     "tags": ["Hip-Hop"]
     },
     {
+    "id": 9,
     "name": "Vaudeville Villain2",
     "artist": "Viktor Vaughn",
     "date": "11/11",
@@ -72,6 +81,7 @@ const mixes = [
     "tags": ['Psychedelic Rock', 'Detroit House']
     },
     {
+    "id": 10,
     "name": "Take Me to Your Leader2",
     "artist": "King Geedorah",
     "date": "11/11",
@@ -79,7 +89,8 @@ const mixes = [
     "description": "A cutout of the three-headed Godzilla villain King Ghidorah staring down a battalion of paper tanks. A diorama cover is about as apt a choice for an album by a sample-heavy producer like DOOM (here under the alias King Geedorah), who crafted all but one song on this joint project..",
     "tags": ["Hip-Hop"]
     },
-        {
+    {
+    "id": 11,
     "name": "Operation Doomsday3",
     "artist": "MF DOOM",
     "date": "11/11",
@@ -88,6 +99,7 @@ const mixes = [
     "tags": ["Hip-Hop", 'Ethiopiques', 'Reggae', 'Afrobeat']
     },
     {
+    "id": 12,
     "name": "MM..FOOD?3",
     "artist": "MF DOOM",
     "date": "15/2",
@@ -96,6 +108,7 @@ const mixes = [
     "tags": ["House / Techno"]
     },
     {
+    "id": 13,
     "name": "Madvillainy3",
     "artist": "Madlib & MF DOOM",
     "date": "1/9",
@@ -104,6 +117,7 @@ const mixes = [
     "tags": ['Trap']
     },
     {
+    "id": 14,
     "name": "Vaudeville Villain3",
     "artist": "Viktor Vaughn",
     "date": "11/11",
@@ -112,6 +126,7 @@ const mixes = [
     "tags": ["UK",'Dubstep', 'Garage', 'Grime']
     },
     {
+    "id": 15,
     "name": "Take Me to Your Leader3",
     "artist": "King Geedorah",
     "date": "11/11",
@@ -120,6 +135,7 @@ const mixes = [
     "tags": ["Hip-Hop"]
     },
     {
+    "id": 16,
     "name": "Operation Doomsday4",
     "artist": "MF DOOM",
     "date": "11/11",
@@ -128,6 +144,7 @@ const mixes = [
     "tags": ['Gangsta', 'Boom Bap', 'Dirty South']
     },
     {
+    "id": 17,
     "name": "MM..FOOD?4",
     "artist": "MF DOOM",
     "date": "15/2",
@@ -136,6 +153,7 @@ const mixes = [
     "tags": ['EBM', 'Industrial', 'Trap']
     },
     {
+    "id": 18,
     "name": "Madvillainy4",
     "artist": "Madlib & MF DOOM",
     "date": "1/9",
@@ -144,6 +162,7 @@ const mixes = [
     "tags": ["Hip-Hop"]
     },
     {
+    "id": 19,
     "name": "Vaudeville Villain4",
     "artist": "Viktor Vaughn",
     "date": "11/11",
@@ -152,6 +171,7 @@ const mixes = [
     "tags": ['Chicago House', 'Detroit House']
     },
     {
+    "id": 20,
     "name": "Take Me to Your Leader4",
     "artist": "King Geedorah",
     "date": "11/11",
