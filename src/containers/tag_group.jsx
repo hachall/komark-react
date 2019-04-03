@@ -44,6 +44,12 @@ class TagGroup extends Component {
     }
   }
 
+  componentDidMount() {
+    if ((this.checkSelectionInGroup()) && (!this.state.open)){
+      this.toggleOpen()
+    }
+  }
+
 
   render() {
 
