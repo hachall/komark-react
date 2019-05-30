@@ -18,14 +18,12 @@ export function selectTag(tag) {
 
 }
 
-
 export function setMixes() {
   return {
     type: 'SET_MIXES',
     payload: mixes
   }
 }
-
 
 export function filterMixes(allMixes, selectedTags) {
   let outputMixes = []
@@ -44,5 +42,18 @@ export function filterMixes(allMixes, selectedTags) {
   return {
     type: 'FILTER_MIXES',
     payload: outputMixes
+  }
+}
+
+export function fetchMix(id) {
+  // console.log(id)
+  // mixes.forEach((mix) => {
+  //   console.log(mix.id == id)
+  // })
+
+  const mix = mixes.find(mix => mix['id'] == id)
+  return {
+    type: 'FETCH_MIX',
+    payload: [mix]
   }
 }

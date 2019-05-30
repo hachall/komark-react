@@ -4,7 +4,6 @@ import { Provider } from 'react-redux';
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
 import { createHistory as history } from 'history';
-
 import { logger } from 'redux-logger';
 
 import '../assets/stylesheets/application.scss';
@@ -39,7 +38,6 @@ if (root) {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/mixes/:id" exact component={MixShow} />
-          {/*<Redirect from="/" to="/" />*/}
         </Switch>
       </Router>
         {/*<MixPlayer />*/}

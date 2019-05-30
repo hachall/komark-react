@@ -10,13 +10,6 @@ import MixPlayer from '../containers/mix_player';
 
 class Home extends Component {
 
-  componentWillMount() {
-    // loadjs('assets/js/stick_script.js', function() {
-
-    // });
-  }
-
-
   render() {
     return (
       <div className="root-home">

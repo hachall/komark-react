@@ -3,20 +3,15 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { setMixes } from '../actions';
 import { filterMixes } from '../actions';
+import { fetchMix } from '../actions';
 
 import Mix from './mix'
 
 class MixList extends Component {
 
-  componentDidUpdate(prevProps, prevState) {
+  componentDidMount() {
 
   }
-
-
-  // componentDidMount() {
-  //   console.log(this.props.allMixes)
-  //   this.props.filterMixes(this.props.allMixes, this.props.selectedTags)
-  // }
 
   render() {
     return (
@@ -30,7 +25,10 @@ class MixList extends Component {
 
 function mapDispatchToProps(dispatch) {
   return bindActionCreators(
-    {filterMixes: filterMixes},
+    {
+      filterMixes: filterMixes,
+      fetchMix: fetchMix
+    },
     dispatch
   );
 }
